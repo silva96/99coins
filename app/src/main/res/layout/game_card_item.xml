@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/game_picture"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="right|center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="desde: $50000"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="-50dp"
+                android:shadowRadius="2"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="4"
+                android:layout_alignRight="@id/game_picture"
+                android:layout_below="@id/game_picture"
+                android:id="@+id/game_min_price" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_picture"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_action_favorite_outline"
+                    android:id="@+id/game_favourite"/>
+                <TextView
+                    android:id="@+id/game_title"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/game_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/game_seller_count"
+                    android:layout_below="@id/game_title"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

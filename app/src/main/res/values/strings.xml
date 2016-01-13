@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">99 Coins</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="loading">Cargando ...</string>
+    <string name="title_activity_starred">StarredActivity</string>
+    <string name="search_hint">Buscar ...</string>
+    <string name="no_results_at_all">No hay resultados para esta búsqueda</string>
+    <string name="no_results_at_category">No hay resultados para esta consola</string>
+    <string name="no_favourites">No tienes favoritos aún</string>
+    <string name="game_title_detail_txt">Título: %s</string>
+    <string name="game_category_detail_txt">Categoría: %s</string>
+    <string name="game_min_price_detail_txt">Precio mínimo: $%s</string>
+    <string name="game_max_price_detail_txt">Precio máximo: $%s</string>
+    <string name="game_average_price_detail_txt">Precio promedio: $%s</string>
+</resources>

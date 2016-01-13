@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/results_wrapper">
+        <Spinner
+            android:id="@+id/filterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_results_recycler_view"
+            android:layout_below="@id/filterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results_at_category"
+            android:id="@+id/no_results_at_category_msg"
+            android:layout_below="@id/filterSpinner"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_results_at_all"
+        android:id="@+id/no_results_at_all_msg"
+        android:layout_below="@id/filterSpinner"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+</LinearLayout>

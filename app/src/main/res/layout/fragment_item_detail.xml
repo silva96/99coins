@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="8dp"
+        android:clickable="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/game_picture_detail"
+                android:scaleType="fitXY"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_toRightOf="@id/game_picture_detail">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_title_detail"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/game_title_detail_txt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_category_detail"
+                    android:layout_below="@id/game_title_detail"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/game_category_detail_txt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_min_price_detail"
+                    android:layout_below="@id/game_category_detail"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/game_min_price_detail_txt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_max_price_detail"
+                    android:layout_below="@id/game_min_price_detail"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/game_max_price_detail_txt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_average_price_detail"
+                    android:layout_below="@id/game_max_price_detail"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/game_average_price_detail_txt"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
